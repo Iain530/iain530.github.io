@@ -4,7 +4,7 @@
     --title-color: black;
     --highlight-color: #eb5e28;
     --highlight-color2: #08415c;
-    --shadow-color: #88888888;
+    --shadow-color: #888888aa;
 
     --border-width: 2px;
 }
@@ -40,7 +40,7 @@ div.intro-title {
 }
 
 img.circle-large {
-    justify-self: center;
+    align-self: center;
     height: 9rem;
     border-radius: 10rem;
     margin-right: 2rem;
@@ -51,15 +51,100 @@ div.page-section {
     margin-top: 2rem;
 }
 
+div.project-grid {
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+div.project-grid > * {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-width: 240px;
+}
+
 div.project-panel {
     display: flex;
-    padding: 0.5rem 2rem 1.5rem;
-    background-color: var(--background-color2);
-    border: var(--border-width) solid var(--highlight-color2);
-    border-radius: 0.5rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color);
+    box-shadow: 0px 2px 4px var(--shadow-color);
+    border-radius: 1rem;
     transition: 0.5s;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+div.project-panel h2 {
+    text-align: center;
+}
+
+a.remove-style {
+    text-decoration: none;
+}
+a.remove-style:active, a.remove-style:focus {
+    outline: none;
 }
 
 div.project-panel:hover {
-    box-shadow: 0px 2px 10px var(--shadow-color);
+    box-shadow: 0px 4px 10px var(--shadow-color);
+}
+
+#tetrio {
+    background-color: black;
+}
+#tetrio h2 {
+    color: white;
+}
+#tetrio-image {
+    background-image: url('../images/tetrio.png');
+    width: 240px;
+    height: 240px;
+    background-size: cover;
+    /* you need to match the shadow color to your background or image border for the desired effect*/
+    box-shadow: 0 -12px 8px -4px black inset;
+}
+
+#forcelayout {
+    background-color: white;
+}
+#forcelayout-image {
+    background-image: url('../images/forcelayout.png');
+    /* width: 100%;
+    height: 100%; */
+    background-size: cover;
+    height: 240px;
+    width: 240px;
+}
+
+#operationwire {
+    background-color: #2a555f;
+}
+#operationwire h2 {
+    color: white;
+}
+#operationwire-image {
+    background-image: url('../images/operationwire.png');
+    width: 240px;
+    height: 240px;
+    background-size: cover;
+    /* you need to match the shadow color to your background or image border for the desired effect*/
+    box-shadow: 0 -12px 8px -4px #2a555f inset;
+}
+
+#guts2018 {
+    background-color: #0c5805;
+}
+#guts2018 h2 {
+    color: white;
+}
+#guts2018-image {
+    background-image: url('../images/guts2018.png');
+    width: 240px;
+    height: 240px;
+    background-size: cover;
+    /* you need to match the shadow color to your background or image border for the desired effect*/
+    box-shadow: 0 -12px 8px -4px #0c5805 inset;
 }
