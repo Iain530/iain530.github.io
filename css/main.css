@@ -66,6 +66,7 @@ div.project-grid > * {
 }
 
 div.project-panel {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,10 +93,26 @@ div.project-panel:hover {
     box-shadow: 0px 4px 10px var(--shadow-color);
 }
 
+div.project-panel .description {
+    height: 230px;
+    width: 210px;
+    padding: 10px 15px;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+div.project-panel:hover .description {
+    opacity: 1;
+}
+
 #tetrio {
     background-color: black;
 }
-#tetrio h2 {
+#tetrio .description {
+    background-color: #000000cc;
+}
+#tetrio * {
     color: white;
 }
 #tetrio-image {
@@ -110,20 +127,45 @@ div.project-panel:hover {
 #forcelayout {
     background-color: white;
 }
+#forcelayout .description {
+    background-color: #ffffffcc;
+}
+#forcelayout * {
+    color: #440154;
+}
 #forcelayout-image {
     background-image: url('../images/forcelayout.png');
-    /* width: 100%;
-    height: 100%; */
     background-size: cover;
     height: 240px;
     width: 240px;
 }
 
-#operationwire {
-    background-color: #2a555f;
+#parkourpiggies {
+    background-color: white;
 }
-#operationwire h2 {
-    color: white;
+#parkourpiggies .description {
+    background-color: #ffffffcc;
+}
+#parkourpiggies * {
+    color: #4180d9;
+}
+#parkourpiggies-image {
+    background-image: url('../images/parkourpiggies.png');
+    width: 240px;
+    height: 240px;
+    background-size: cover;
+    /* you need to match the shadow color to your background or image border for the desired effect*/
+    box-shadow: 0 -12px 8px -4px white inset;
+}
+
+#operationwire {
+    background-color: #96d6b2;
+}
+#operationwire .description {
+    background-color: #96d6b2cc;
+}
+#operationwire * {
+    color: black;
 }
 #operationwire-image {
     background-image: url('../images/operationwire.png');
@@ -131,13 +173,16 @@ div.project-panel:hover {
     height: 240px;
     background-size: cover;
     /* you need to match the shadow color to your background or image border for the desired effect*/
-    box-shadow: 0 -12px 8px -4px #2a555f inset;
+    box-shadow: 0 -12px 8px -4px #96d6b2 inset;
 }
 
 #guts2018 {
     background-color: #0c5805;
 }
-#guts2018 h2 {
+#guts2018 .description {
+    background-color: #0c5805cc;
+}
+#guts2018 * {
     color: white;
 }
 #guts2018-image {
