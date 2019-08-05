@@ -2,16 +2,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const contactForm = document.getElementById('contact-form');
     contactForm.addEventListener('submit', (event) => {
-        event.preventDefault();
+        // event.preventDefault();
         contactForm.querySelectorAll('input, textarea').forEach((node) => {
             node.disabled = true;
         });
 
         const request = new XMLHttpRequest();
-        const url = 'https://getsimpleform.com/messages?form_api_token=02236491c7a08c86562d3b2e9c58c86a';
+        // const url = 'https://getsimpleform.com/messages?form_api_token=02236491c7a08c86562d3b2e9c58c86a';
+        const url = 'https://app.99inbound.com/api/e/UGiAgPt7';
         const data = new FormData(contactForm);
         request.open('POST', url);
-
 
         request.onreadystatechange = () => {
             if (request.readyState === 4 && request.status === 200)
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 onFormSentError();
         };
 
-        request.send(data);
+        // request.send(data);
     });
 });
 
