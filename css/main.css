@@ -189,6 +189,23 @@ div.project-panel:hover .description {
     box-shadow: 0 -12px 8px -4px black inset;
 }
 
+#homely {
+    background-color: #4e4e4e;
+}
+#homely .description {
+    background-color: #4e4e4ecc;
+}
+#homely * {
+    color: #ffffff;
+}
+#homely-image {
+    background-image: url('../images/homely.PNG');
+    background-size: cover;
+    height: 240px;
+    width: 240px;
+    box-shadow: 0 -12px 8px -4px #4e4e4e inset;
+}
+
 #catan {
     background-color: #9f2f22;
 }
