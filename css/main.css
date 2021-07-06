@@ -274,20 +274,17 @@ div.project-panel:hover .description {
 }
 
 
-#tetrio {
-    background-color: black;
+#island-dream {
+    background-color: #EFEFEF;
 }
-#tetrio .description {
-    background-color: #000000ee;
+#island-dream .description {
+    background-color: #EFEFEFee;
 }
-#tetrio * {
-    color: white;
+#island-dream * {
+    color: black;
 }
-#tetrio-image {
-    background-image: url('../images/tetrio.png');
-    background-size: cover;
-    /* you need to match the shadow color to your background or image border for the desired effect*/
-    box-shadow: 0 -12px 8px -4px black inset;
+#island-dream-image {
+    border-color: black;
 }
 
 #homely {
@@ -300,7 +297,6 @@ div.project-panel:hover .description {
     color: #ffffff;
 }
 #homely-image {
-    box-shadow: 0 -12px 8px -4px #4e4e4e inset;
     border-color: #ffffff;
 }
 
@@ -352,4 +348,20 @@ div.project-panel:hover .description {
 }
 #guts2018 * {
     color: white;
+}
+
+#tetrio {
+    background-color: black;
+}
+#tetrio .description {
+    background-color: #000000ee;
+}
+#tetrio * {
+    color: white;
+}
+#tetrio-image {
+    /* background-image: url('../images/tetrio.png'); */
+    /* background-size: cover; */
+    /* you need to match the shadow color to your background or image border for the desired effect*/
+    /* box-shadow: 0 -12px 8px -4px black inset; */
 }
