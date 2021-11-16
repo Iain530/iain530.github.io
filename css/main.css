@@ -273,6 +273,15 @@ div.project-panel:hover .description {
     border-style: solid;
 }
 
+#munrobagging {
+    background-color: #E8E9DA;
+}
+#munrobagging .description {
+    background-color: #E8E9DAee;
+}
+#munrobagging * {
+    color: #1a1a1a;
+}
 
 #island-dream {
     background-color: #EFEFEF;
@@ -283,9 +292,6 @@ div.project-panel:hover .description {
 #island-dream * {
     color: black;
 }
-#island-dream-image {
-    border-color: black;
-}
 
 #homely {
     background-color: #4e4e4e;
@@ -295,9 +301,6 @@ div.project-panel:hover .description {
 }
 #homely * {
     color: #ffffff;
-}
-#homely-image {
-    border-color: #ffffff;
 }
 
 #catan {
